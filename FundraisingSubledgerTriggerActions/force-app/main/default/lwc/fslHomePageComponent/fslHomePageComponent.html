@@ -1,0 +1,44 @@
+<template>
+    <lightning-card if:true={userFirstName} title={cardTitleAndUser} icon-name={cardIcon}>
+
+        <!-- WELCOME SECTION -->
+        <p class="slds-var-m-around_medium">
+            <img src={homePageWelcomeImage} />
+        </p>
+
+        <!-- NAVIGATION SECTION -->
+        <div class="slds-text-heading_small slds-var-m-around_medium">
+            <lightning-icon icon-name="custom:custom96" alternative-text="Navigation" title="Navigation"></lightning-icon> 
+            &nbsp;Explore the App
+        </div>
+        <p class="slds-var-m-around_medium">
+            Here are some navigation options to go quickly to useful things
+        </p>
+        <ul class="slds-var-m-around_medium slds-list_dotted">
+            <li><a href="https://www.mets.com" target="_blank">A thing</a></li>
+            <li><a href="https://www.mets.com" target="_blank">Another thing</a></li>
+            <li><a href="https://www.mets.com" target="_blank">A different thing, honest</a></li>
+        </ul>
+
+        <!-- INFORMATION SECTION -->
+        <div class="slds-text-heading_small slds-var-m-around_medium">
+            <lightning-icon icon-name="custom:custom55" alternative-text="Information" title="Information"></lightning-icon> 
+            &nbsp;Fundraising Subledger Documentation
+        </div>
+        <p class="slds-var-m-around_medium">
+            Here is some helpful information about how to get around this fundraising subledger thing.
+        </p>
+        <ul class="slds-var-m-around_medium slds-list_dotted">
+            <li><a href="https://quip.com/he3BAxdakzq9/Fundraising-Subledger-Build-Deck" target="_blank">Fundraising Subledger Build Deck</a></li>
+            <li><a href="https://github.com/stefanserkin/FundraisingSubledger" target="_blank">Source (Git)</a></li>
+        </ul>
+
+        <!-- FOOTER -->
+        <p slot="footer" class="slds-var-m-around_medium">
+            <a href="https://github.com/stefanserkin" target="_blank">
+                <img width="100px;" src={serkinSolutionsLogoImage} />
+            </a>
+        </p>
+
+    </lightning-card>
+</template>
